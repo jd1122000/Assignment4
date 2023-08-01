@@ -30,7 +30,7 @@ public class DefaultSuiteTest
         driver.Quit();
     }
     [Test]
-    public void insuranceQuote0125and3and04500()
+    public void insuranceQuote01_25and3and0_insurancerate4500()
     {
         driver.Navigate().GoToUrl("http://localhost/prog8170a04/prog8170a04/");
         driver.Manage().Window.Size = new System.Drawing.Size(680, 834);
@@ -60,7 +60,7 @@ public class DefaultSuiteTest
         }
     }
     [Test]
-    public void insuranceQuote0225and3and24500()
+    public void insuranceQuote02_25and3and2_insurancerate4500()
     {
         driver.Navigate().GoToUrl("http://localhost/prog8170a04/prog8170a04/");
         driver.Manage().Window.Size = new System.Drawing.Size(680, 834);
@@ -89,7 +89,7 @@ public class DefaultSuiteTest
         }
     }
     [Test]
-    public void insuranceQuote0335and10and4NoInsuranceforyou()
+    public void insuranceQuote03_35and10and4_NoInsuranceforyou()
     {
         driver.Navigate().GoToUrl("http://localhost/prog8170a04/prog8170a04/");
         driver.Manage().Window.Size = new System.Drawing.Size(680, 834);
@@ -119,7 +119,7 @@ public class DefaultSuiteTest
         }
     }
     [Test]
-    public void insuranceQuote04invalidPhoneNumberwith27and3and0PhoneNumbermustfollowthepatterns()
+    public void insuranceQuote04_invalidPhoneNumberwith27and3and0_PhoneNumbermustfollowthepatterns()
     {
         driver.Navigate().GoToUrl("http://localhost/prog8170a04/prog8170a04/");
         driver.Manage().Window.Size = new System.Drawing.Size(680, 834);
@@ -154,7 +154,7 @@ public class DefaultSuiteTest
         Assert.That(driver.FindElement(By.Id("phone-error")).Text, Is.EqualTo("Phone Number must follow the patterns 111-111-1111 or (111)111-1111"));
     }
     [Test]
-    public void insuranceQuote05InvalidEmailwith28and3and0Mustbeavalidemailaddress()
+    public void insuranceQuote05_InvalidEmailwith28and3and0_Mustbeavalidemailaddress()
     {
         driver.Navigate().GoToUrl("http://localhost/prog8170a04/prog8170a04/");
         driver.Manage().Window.Size = new System.Drawing.Size(680, 834);
@@ -187,7 +187,7 @@ public class DefaultSuiteTest
         Assert.That(driver.FindElement(By.Id("email-error")).Text, Is.EqualTo("Must be a valid email address"));
     }
     [Test]
-    public void insuranceQuote06InvalidPostalCodewith35and17and1PostalCodemustfollowthepatternA1A1A1()
+    public void insuranceQuote06_InvalidPostalCodewith35and17and1_PostalCodemustfollowthepatternA1A1A1()
     {
         driver.Navigate().GoToUrl("http://localhost/prog8170a04/prog8170a04/");
         driver.Manage().Window.Size = new System.Drawing.Size(680, 834);
@@ -222,7 +222,7 @@ public class DefaultSuiteTest
         Assert.That(driver.FindElement(By.Id("postalCode-error")).Text, Is.EqualTo("Postal Code must follow the pattern A1A 1A1"));
     }
     [Test]
-    public void insuranceQuote07AgeOmmitedwith5and0Age16isrequired()
+    public void insuranceQuote07_AgeOmmitedwith5and0_Ageshouldbegreaterthan16isrequired()
     {
         driver.Navigate().GoToUrl("http://localhost/prog8170a04/prog8170a04/");
         driver.Manage().Window.Size = new System.Drawing.Size(680, 834);
@@ -254,7 +254,7 @@ public class DefaultSuiteTest
         Assert.That(driver.FindElement(By.Id("age-error")).Text, Is.EqualTo("Age (>=16) is required"));
     }
     [Test]
-    public void insuranceQuote08NumberOfAccidentsOmmitedwith37and8Numberofaccidentsisrequired()
+    public void insuranceQuote08_NumberOfAccidentsOmmitedwith37and8_Numberofaccidentsisrequired()
     {
         driver.Navigate().GoToUrl("http://localhost/prog8170a04/prog8170a04/");
         driver.Manage().Window.Size = new System.Drawing.Size(680, 834);
@@ -295,7 +295,7 @@ public class DefaultSuiteTest
         Assert.That(driver.FindElement(By.Id("accidents-error")).Text, Is.EqualTo("Number of accidents is required"));
     }
     [Test]
-    public void insuranceQuote09YearsofDrivingExperienceOmmitedwith45and0Yearsofexperienceisrequired()
+    public void insuranceQuote09_YearsofDrivingExperienceOmmitedwith45and0_Yearsofexperienceisrequired()
     {
         driver.Navigate().GoToUrl("http://localhost/prog8170a04/prog8170a04/");
         driver.Manage().Window.Size = new System.Drawing.Size(680, 834);
@@ -333,7 +333,7 @@ public class DefaultSuiteTest
         Assert.That(driver.FindElement(By.Id("experience-error")).Text, Is.EqualTo("Years of experience is required"));
     }
     [Test]
-    public void insuranceQuote1025and0and06000()
+    public void insuranceQuote10_25and0and0_insurancerate6000()
     {
         driver.Navigate().GoToUrl("http://localhost/prog8170a04/prog8170a04/");
         driver.Manage().Window.Size = new System.Drawing.Size(680, 834);
@@ -359,7 +359,7 @@ public class DefaultSuiteTest
         }
     }
     [Test]
-    public void insuranceQuote1140and12and6NoInsuranceforyou()
+    public void insuranceQuote11_40and12and6_NoInsuranceforyou()
     {
         driver.Navigate().GoToUrl("http://localhost/prog8170a04/prog8170a04/");
         driver.Manage().Window.Size = new System.Drawing.Size(680, 834);
@@ -387,7 +387,7 @@ public class DefaultSuiteTest
         }
     }
     [Test]
-    public void insuranceQuote1235and1and24500()
+    public void insuranceQuote12_35and1and2_insurancerate4500()
     {
         driver.Navigate().GoToUrl("http://localhost/prog8170a04/prog8170a04/");
         driver.Manage().Window.Size = new System.Drawing.Size(680, 834);
@@ -413,7 +413,7 @@ public class DefaultSuiteTest
         }
     }
     [Test]
-    public void insuranceQuote1332and2and03285()
+    public void insuranceQuote13_32and2and0_insurancerate3285()
     {
         driver.Navigate().GoToUrl("http://localhost/prog8170a04/prog8170a04/");
         driver.Manage().Window.Size = new System.Drawing.Size(680, 834);
@@ -439,7 +439,7 @@ public class DefaultSuiteTest
         }
     }
     [Test]
-    public void insuranceQuote1431and12and12190()
+    public void insuranceQuote14_31and12and1_insurancerate2190()
     {
         driver.Navigate().GoToUrl("http://localhost/prog8170a04/prog8170a04/");
         driver.Manage().Window.Size = new System.Drawing.Size(680, 834);
@@ -467,7 +467,7 @@ public class DefaultSuiteTest
         }
     }
     [Test]
-    public void insuranceQuote1518and1and3NoInsuranceforyou()
+    public void insuranceQuote15_18and1and3_NoInsuranceforyou()
     {
         driver.Navigate().GoToUrl("http://localhost/prog8170a04/prog8170a04/");
         driver.Manage().Window.Size = new System.Drawing.Size(680, 834);
