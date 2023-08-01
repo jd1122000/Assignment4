@@ -29,10 +29,12 @@ public class DefaultSuiteTest
     {
         driver.Quit();
     }
+
+    string baseURL = "http://localhost/prog8170a04/prog8170a04/";
     [Test]
     public void insuranceQuote01_25and3and0_insurancerate4500()
     {
-        driver.Navigate().GoToUrl("http://localhost/prog8170a04/prog8170a04/");
+        driver.Navigate().GoToUrl(baseURL);
         driver.Manage().Window.Size = new System.Drawing.Size(680, 834);
         driver.FindElement(By.CssSelector(".btn")).Click();
         driver.FindElement(By.Id("firstName")).Click();
@@ -62,7 +64,7 @@ public class DefaultSuiteTest
     [Test]
     public void insuranceQuote02_25and3and2_insurancerate4500()
     {
-        driver.Navigate().GoToUrl("http://localhost/prog8170a04/prog8170a04/");
+        driver.Navigate().GoToUrl(baseURL);
         driver.Manage().Window.Size = new System.Drawing.Size(680, 834);
         driver.FindElement(By.CssSelector(".btn")).Click();
         driver.FindElement(By.Id("firstName")).Click();
@@ -91,7 +93,7 @@ public class DefaultSuiteTest
     [Test]
     public void insuranceQuote03_35and10and4_NoInsuranceforyou()
     {
-        driver.Navigate().GoToUrl("http://localhost/prog8170a04/prog8170a04/");
+        driver.Navigate().GoToUrl(baseURL);
         driver.Manage().Window.Size = new System.Drawing.Size(680, 834);
         driver.FindElement(By.CssSelector(".btn")).Click();
         driver.FindElement(By.Id("firstName")).Click();
@@ -121,7 +123,7 @@ public class DefaultSuiteTest
     [Test]
     public void insuranceQuote04_invalidPhoneNumberwith27and3and0_PhoneNumbermustfollowthepatterns()
     {
-        driver.Navigate().GoToUrl("http://localhost/prog8170a04/prog8170a04/");
+        driver.Navigate().GoToUrl(baseURL);
         driver.Manage().Window.Size = new System.Drawing.Size(680, 834);
         driver.FindElement(By.CssSelector(".btn")).Click();
         driver.FindElement(By.Id("firstName")).Click();
@@ -156,7 +158,7 @@ public class DefaultSuiteTest
     [Test]
     public void insuranceQuote05_InvalidEmailwith28and3and0_Mustbeavalidemailaddress()
     {
-        driver.Navigate().GoToUrl("http://localhost/prog8170a04/prog8170a04/");
+        driver.Navigate().GoToUrl(baseURL);
         driver.Manage().Window.Size = new System.Drawing.Size(680, 834);
         driver.FindElement(By.CssSelector(".btn")).Click();
         driver.FindElement(By.Id("firstName")).Click();
@@ -189,7 +191,7 @@ public class DefaultSuiteTest
     [Test]
     public void insuranceQuote06_InvalidPostalCodewith35and17and1_PostalCodemustfollowthepatternA1A1A1()
     {
-        driver.Navigate().GoToUrl("http://localhost/prog8170a04/prog8170a04/");
+        driver.Navigate().GoToUrl(baseURL);
         driver.Manage().Window.Size = new System.Drawing.Size(680, 834);
         driver.FindElement(By.CssSelector(".btn")).Click();
         driver.FindElement(By.CssSelector(".card:nth-child(1) > div > .form-group:nth-child(1)")).Click();
@@ -224,7 +226,7 @@ public class DefaultSuiteTest
     [Test]
     public void insuranceQuote07_AgeOmmitedwith5and0_Ageshouldbegreaterthan16isrequired()
     {
-        driver.Navigate().GoToUrl("http://localhost/prog8170a04/prog8170a04/");
+        driver.Navigate().GoToUrl(baseURL);
         driver.Manage().Window.Size = new System.Drawing.Size(680, 834);
         driver.FindElement(By.CssSelector(".btn")).Click();
         driver.FindElement(By.Id("firstName")).Click();
@@ -256,7 +258,7 @@ public class DefaultSuiteTest
     [Test]
     public void insuranceQuote08_NumberOfAccidentsOmmitedwith37and8_Numberofaccidentsisrequired()
     {
-        driver.Navigate().GoToUrl("http://localhost/prog8170a04/prog8170a04/");
+        driver.Navigate().GoToUrl(baseURL);
         driver.Manage().Window.Size = new System.Drawing.Size(680, 834);
         driver.FindElement(By.CssSelector(".btn")).Click();
         driver.FindElement(By.Id("firstName")).Click();
@@ -297,7 +299,7 @@ public class DefaultSuiteTest
     [Test]
     public void insuranceQuote09_YearsofDrivingExperienceOmmitedwith45and0_Yearsofexperienceisrequired()
     {
-        driver.Navigate().GoToUrl("http://localhost/prog8170a04/prog8170a04/");
+        driver.Navigate().GoToUrl(baseURL);
         driver.Manage().Window.Size = new System.Drawing.Size(680, 834);
         driver.FindElement(By.CssSelector(".btn")).Click();
         driver.FindElement(By.Id("firstName")).Click();
@@ -335,7 +337,7 @@ public class DefaultSuiteTest
     [Test]
     public void insuranceQuote10_25and0and0_insurancerate6000()
     {
-        driver.Navigate().GoToUrl("http://localhost/prog8170a04/prog8170a04/");
+        driver.Navigate().GoToUrl(baseURL);
         driver.Manage().Window.Size = new System.Drawing.Size(680, 834);
         driver.FindElement(By.CssSelector(".btn")).Click();
         driver.FindElement(By.Id("firstName")).Click();
@@ -361,7 +363,7 @@ public class DefaultSuiteTest
     [Test]
     public void insuranceQuote11_40and12and6_NoInsuranceforyou()
     {
-        driver.Navigate().GoToUrl("http://localhost/prog8170a04/prog8170a04/");
+        driver.Navigate().GoToUrl(baseURL);
         driver.Manage().Window.Size = new System.Drawing.Size(680, 834);
         driver.FindElement(By.CssSelector(".btn")).Click();
         driver.FindElement(By.Id("firstName")).Click();
@@ -389,7 +391,7 @@ public class DefaultSuiteTest
     [Test]
     public void insuranceQuote12_35and1and2_insurancerate4500()
     {
-        driver.Navigate().GoToUrl("http://localhost/prog8170a04/prog8170a04/");
+        driver.Navigate().GoToUrl(baseURL);
         driver.Manage().Window.Size = new System.Drawing.Size(680, 834);
         driver.FindElement(By.CssSelector(".btn")).Click();
         driver.FindElement(By.Id("firstName")).Click();
@@ -415,7 +417,7 @@ public class DefaultSuiteTest
     [Test]
     public void insuranceQuote13_32and2and0_insurancerate3285()
     {
-        driver.Navigate().GoToUrl("http://localhost/prog8170a04/prog8170a04/");
+        driver.Navigate().GoToUrl(baseURL);
         driver.Manage().Window.Size = new System.Drawing.Size(680, 834);
         driver.FindElement(By.CssSelector(".btn")).Click();
         driver.FindElement(By.Id("firstName")).Click();
@@ -441,7 +443,7 @@ public class DefaultSuiteTest
     [Test]
     public void insuranceQuote14_31and12and1_insurancerate2190()
     {
-        driver.Navigate().GoToUrl("http://localhost/prog8170a04/prog8170a04/");
+        driver.Navigate().GoToUrl(baseURL);
         driver.Manage().Window.Size = new System.Drawing.Size(680, 834);
         driver.FindElement(By.CssSelector(".btn")).Click();
         driver.FindElement(By.CssSelector(".card:nth-child(1) > div:nth-child(2)")).Click();
@@ -469,7 +471,7 @@ public class DefaultSuiteTest
     [Test]
     public void insuranceQuote15_18and1and3_NoInsuranceforyou()
     {
-        driver.Navigate().GoToUrl("http://localhost/prog8170a04/prog8170a04/");
+        driver.Navigate().GoToUrl(baseURL);
         driver.Manage().Window.Size = new System.Drawing.Size(680, 834);
         driver.FindElement(By.CssSelector(".btn")).Click();
         driver.FindElement(By.Id("firstName")).Click();
